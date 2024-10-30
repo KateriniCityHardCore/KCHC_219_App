@@ -200,7 +200,8 @@
     "Description": "Music and Videogames Streaming",
     "ExtraDescription": "Tsitser Mitser turking over the sounds of Bouzouki\nH episimh mascot tou KCHC",
     "TrovoAccountUrl": "https://trovo.live/s/Theios_Karaflesas",
-    "TwitchAccountUrl": "https://www.twitch.tv/theios_karaflesas"
+    "TwitchAccountUrl": "https://www.twitch.tv/theios_karaflesas",
+    "Genre": [ "Cinematic" ]
   },
   {
     "Name": "Words Of Hate",
@@ -241,8 +242,7 @@
     "PhotoPath": "sokolatokolla.jpg",
     "Description": "Indie",
     "ExtraDescription": "Μην τον πιστεύεται, είναι ηθοποιός",
-    "SpotifyAccountUrl": null,
-    "https": null, //open.spotify.com/artist/4GnAyT70ANpWADlDoXO626?si=0eyTeZyFSjyjhZee6qnK2A,
+    "SpotifyAccountUrl": "https://open.spotify.com/artist/4GnAyT70ANpWADlDoXO626?si=0eyTeZyFSjyjhZee6qnK2A",
     "Genre": [ "Indie" ]
   },
   {
