@@ -17,9 +17,10 @@
   },
   {
     "Name": "Dj Apogoiteusi",
-    "PhotoPath": "DjApogoiteusi.JPG",
+    "PhotoPath": "DjApogoiteusi.jpg",
     "Description": "Storytelling Techno",
     "SpotifyAccountUrl": "https://open.spotify.com/artist/0pzVCn7LZgwrTiYUtDjjxM?si=xgBnRLqfRMS0pCWNThD1zA",
+    "BandCampAccountUrl": "https://libys.bandcamp.com/album/--3",
     "YoutubeAccountUrl": "https://youtu.be/y1shjZEhDu8?si=Y5acjnzuwume9Zlr",
     "ExtraDescription": "I bought a TD-3, starting playing at parties, shook a lot of buttocks. Also cinephile."
   },
@@ -115,6 +116,13 @@
     "Description": "Katerinian Hard as Fuck Tough Guy Malicius Murderous Hardcore",
     "ExtraDescription": "Thanos 'Mengelit' - Murderous Raps\nSpiridonas - Apeshit Music and Unholy Screams",
     "IsABand": true
+  },
+  {
+    "Name": "Ostiarium",
+    "PhotoPath": "Ostiarium.png",
+    "Description": "Offbeat Rap - Spoken Word",
+    "YoutubeAccountUrl": "https://youtu.be/1cljS_PvJoM?si=8S0y5ocgOmnqI97V",
+    "ExtraDescription": "Old Legendary Deleted Member Ostiarium A.K.A. KaneLonis"
   },
   {
     "Name": "Pizza Boston",
