@@ -11,6 +11,7 @@ namespace KCHC.Enum
         Cinematic,
         Indie,
         Metal,
+        Poetry,
         Punk,
         Rock,
         Rap,
