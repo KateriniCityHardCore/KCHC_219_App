@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using KCHC.Enum;
 
 namespace KCHC.Models
 {
-    public class Artist
+    public class Artist : Person
     {
-        public string Name { get; set; } = string.Empty;
-        public string PhotoPath { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
+        public Genre Genre { get; set; } = Genre.Katerinian;
         public string ContentImage { get; set; } = string.Empty;
         public string SpotifyAccountUrl { get; set; } = string.Empty;
         public string YoutubeAccountUrl { get; set; } = string.Empty;
@@ -19,8 +18,9 @@ namespace KCHC.Models
         public string ExtraDescription { get; set; } = string.Empty;
         public string SongkickUrl { get; set; } = string.Empty;
         public bool IsABand { get; set; } = false;
-        public DateTime DateTime { get; set; } = DateTime.MinValue;
-        
+        public DateTime CreatedOn { get; set; } = DateTime.MinValue;
+        public List<MemberRole> Members { get; set; } = new List<MemberRole>();
+
 
         /// <summary>
         /// Not full Constructor. This constructor is only for first page
@@ -35,20 +35,29 @@ namespace KCHC.Models
             Description = description;
         }
 
-        /// <summary>
-        /// Not full Constructor. This constructor is only for first page and configuring if its a band or not
-        /// </summary>
-        /// <param name="name"> The Name of the Artist</param>
-        /// <param name="photoPath">The photopath of the artist inside this solution</param>
-        /// <param name="description">General description about the artist</param>
-        public Artist(string name, string photoPath, string description, bool isaband)
+        /// <summary> 
+        ///  Constructor with optional parameters. Only the name is necessary.
+        /// </summary> 
+        public Artist(string name, string photoPath = "", string description = "", Genre genre = Genre.Katerinian, string contentImage = "", string spotifyAccountUrl = "", string youtubeAccountUrl, string bandCampAccountUrl = "",
+            string soundcloudAccountUrl = "", string trovoAccountUrl = "", string twitchAccountUrl = "", string extraDescription = "", string songkickUrl = "", bool isABand = true, DateTime dateTime = default, List<MemberRole> members = null)
         {
             Name = name;
             PhotoPath = photoPath;
             Description = description;
-            IsABand = isaband;
+            Genre = genre;
+            ContentImage = contentImage;
+            SpotifyAccountUrl = spotifyAccountUrl;
+            YoutubeAccountUrl = youtubeAccountUrl;
+            BandCampAccountUrl = bandCampAccountUrl;
+            SoundcloudAccountUrl = soundcloudAccountUrl;
+            TrovoAccountUrl = trovoAccountUrl;
+            TwitchAccountUrl = twitchAccountUrl;
+            ExtraDescription = extraDescription;
+            SongkickUrl = songkickUrl;
+            IsABand = isABand;
+            CreatedOn = dateTime;
+            Members = members;
         }
-
 
         /// <summary>
         /// Empty Constructor

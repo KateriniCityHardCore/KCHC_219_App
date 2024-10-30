@@ -258,12 +258,12 @@ namespace KCHC
             LoadPagesDifferences();
             BindingContext = artist;
             ImageArtist.Source = artist.PhotoPath;
-            if (artist.DateTime != null && artist.DateTime != System.DateTime.MinValue)
+            if (artist.CreatedOn != null && artist.CreatedOn != System.DateTime.MinValue)
             {
                 // Create a new Label for displaying "Created on: "
                 Label createdOnLabel = new Label
                 {
-                    Text = "Created on: " + artist.DateTime.ToString("dd MMM yyyy"),
+                    Text = "Created on: " + artist.CreatedOn.ToString("dd MMM yyyy"),
                     FontSize = 18,
                     HorizontalOptions = LayoutOptions.CenterAndExpand
                 };
