@@ -6,7 +6,9 @@ namespace KCHC.Enum
 {
     public enum Genre
     {
+        Ambient,
         Katerinian,
+        Cinematic,
         Indie,
         Metal,
         Punk,

@@ -5,7 +5,8 @@
     "Description": "Katerinian Hardcockpunk",
     "YoutubeAccountUrl": "https://www.youtube.com/watch?v=dGArrZ8m1MU",
     "ExtraDescription": "Spyke-Nesik-Sok Katerinian Hardcopunk band, 2014-2015",
-    "IsABand": true
+    "IsABand": true,
+    "Genre": "Punk"
   },
   {
     "Name": "Cult Crush",
@@ -13,7 +14,8 @@
     "Description": "Hardcock",
     "YoutubeAccountUrl": "https://www.youtube.com/@cultcrush9375",
     "ExtraDescription": "Spuros - Aris - Johan | 2021",
-    "IsABand": true
+    "IsABand": true,
+    "Genre": "BeatdownHardcore"
   },
   {
     "Name": "Dj Apogoiteusi",
@@ -22,7 +24,8 @@
     "SpotifyAccountUrl": "https://open.spotify.com/artist/0pzVCn7LZgwrTiYUtDjjxM?si=xgBnRLqfRMS0pCWNThD1zA",
     "BandCampAccountUrl": "https://libys.bandcamp.com/album/--3",
     "YoutubeAccountUrl": "https://youtu.be/y1shjZEhDu8?si=Y5acjnzuwume9Zlr",
-    "ExtraDescription": "I bought a TD-3, starting playing at parties, shook a lot of buttocks. Also cinephile."
+    "ExtraDescription": "I bought a TD-3, starting playing at parties, shook a lot of buttocks. Also cinephile.",
+    "Genre": "ElectronicDanceMusic"
   },
   {
     "Name": "F.O.A.",
@@ -32,7 +35,8 @@
     "BandCampAccountUrl": "https://foapieriaviolence.bandcamp.com/album/war-on-armageddon",
     "SpotifyAccountUrl": "https://open.spotify.com/artist/6uFKOSk5B1ybkpAkPFPrqs",
     "ExtraDescription": "Followers Of the Apocalypse\n\nVocals - MD\nGuitars and vocals - Spyridonas\nBass - Socswarm\nDrums - N.A.T.",
-    "IsABand": true
+    "IsABand": true,
+    "Genre": "BeatdownHardcore"
   },
   {
     "Name": "Killathea",
@@ -40,7 +44,8 @@
     "Description": "Emotional Rap",
     "SpotifyAccountUrl": "https://open.spotify.com/artist/38fatBRI4r5wi7VReN7arO",
     "YoutubeAccountUrl": "https://www.youtube.com/@killathea307",
-    "ExtraDescription": "Συναισθηματικό ραπ κατευθείαν από το καζάνι της τρέλας για ερωτικούς, αιρετικούς και τρελούς που είναι τουλάχιστον ευτυχείς."
+    "ExtraDescription": "Συναισθηματικό ραπ κατευθείαν από το καζάνι της τρέλας για ερωτικούς, αιρετικούς και τρελούς που είναι τουλάχιστον ευτυχείς.",
+    "Genre": "Rap"
   },
   {
     "Name": "Kontses",
@@ -48,7 +53,8 @@
     "Description": "Epic, Soundtrack, Neo-Classical",
     "SpotifyAccountUrl": "https://open.spotify.com/artist/3clCYTC9LLks4uKkfjOhZ6?si=nQjAyfPpTBqDzjhK1HdwJw",
     "YoutubeAccountUrl": "https://www.youtube.com/channel/UC5oJrIdeqDJwTkQ3SucN6VA",
-    "ExtraDescription": "I'm a composer who mainly creates Epic Music, Soundtrack Music and Minimal Music. My dream is to write music for film..!!!"
+    "ExtraDescription": "I'm a composer who mainly creates Epic Music, Soundtrack Music and Minimal Music. My dream is to write music for film..!!!",
+    "Genre": "Cinematic"
   },
   {
     "Name": "Kryptic Lynch Gang",
@@ -56,7 +62,8 @@
     "Description": "Autistic Raps",
     "YoutubeAccountUrl": "https://www.youtube.com/watch?v=FCtm7t4ab7o",
     "ExtraDescription": "AκυκλοaφορυταRαππουθασεκανουνναπειςΑμανΠαναγιτσαμου.",
-    "IsABand": true
+    "IsABand": true,
+    "Genre": "Rap"
   },
   {
     "Name": "Libys",
@@ -67,7 +74,8 @@
     "YoutubeAccountUrl": "https://www.youtube.com/@Libys",
     "BandCampAccountUrl": "https://libys.bandcamp.com/track/ifeellibys-5",
     "SoundcloudAccountUrl": "https://soundcloud.com/libys/tracks",
-    "SongkickUrl": "https://www.songkick.com/artists/10152559"
+    "SongkickUrl": "https://www.songkick.com/artists/10152559",
+    "Genre": "Indie"
   },
   {
     "Name": "Maura Tsigara",
@@ -75,7 +83,8 @@
     "Description": "Meme emo rap",
     "ExtraDescription": "Katahlipsi and Stress",
     "IsABand": true,
-    "YoutubeAccountUrl": "https://www.youtube.com/@MauraTsigara"
+    "YoutubeAccountUrl": "https://www.youtube.com/@MauraTsigara",
+    "Genre": "Rap"
   },
   {
     "Name": "Marios Pol",
@@ -83,7 +92,8 @@
     "Description": "Rap kai kapsourotragouda",
     "ExtraDescription": "Marios Poluxroniou",
     "YoutubeAccountUrl": "https://www.youtube.com/@onlyrapsongsunreleased2138",
-    "SpotifyAccountUrl": "https://open.spotify.com/artist/1rVQijAbNkYIeIcb5qeU7O?si=-LaiZ76xQ1m3zbSWrvqMUg"
+    "SpotifyAccountUrl": "https://open.spotify.com/artist/1rVQijAbNkYIeIcb5qeU7O?si=-LaiZ76xQ1m3zbSWrvqMUg",
+    "Genre": "Rap"
   },
   {
     "Name": "Mayday",
@@ -92,7 +102,8 @@
     "ExtraDescription": "The COOLest DJ In The World",
     "YoutubeAccountUrl": "https://www.youtube.com/@MariosDimitriou",
     "SpotifyAccountUrl": "https://open.spotify.com/user/11120416820",
-    "BandCampAccountUrl": "https://maydayofc.bandcamp.com/"
+    "BandCampAccountUrl": "https://maydayofc.bandcamp.com/",
+    "Genre": "ElectronicDanceMusic"
   },
   {
     "Name": "Nathanael",
@@ -100,7 +111,8 @@
     "Description": "New Isolationism",
     "ExtraDescription": "Ambient Trance pastor to bridge the gap between your microcosm and reality",
     "SpotifyAccountUrl": "https://open.spotify.com/artist/7g4U99RKjgefrNucrxCBJ6?si=_LRveAEKSBGf8qYc8OeLvg",
-    "SoundcloudAccountUrl": "https://soundcloud.com/libys/sets/isolated-island"
+    "SoundcloudAccountUrl": "https://soundcloud.com/libys/sets/isolated-island",
+    "Genre": "Ambient"
   },
   {
     "Name": "Nurgle",
@@ -108,28 +120,32 @@
     "Description": "Satanic black metal",
     "ExtraDescription": "Nurgle is an act of 2 formed to spread the words of selfawareness, despair, chaos and victory.\nWhat you're witnessing as mountain might be the tip of the iceberg.\n\nVocals: Rakshas, Instruments: Gaiseric",
     "BandCampAccountUrl": "https://nurglechaosuprema.bandcamp.com/",
-    "IsABand": true
+    "IsABand": true,
+    "Genre": "Metal"
   },
   {
     "Name": "OLYMPUS",
     "PhotoPath": "olympus.jpg",
     "Description": "Katerinian Hard as Fuck Tough Guy Malicius Murderous Hardcore",
     "ExtraDescription": "Thanos 'Mengelit' - Murderous Raps\nSpiridonas - Apeshit Music and Unholy Screams",
-    "IsABand": true
+    "IsABand": true,
+    "Genre": "BeatdownHardcore"
   },
   {
     "Name": "Ostiarium",
     "PhotoPath": "Ostiarium.png",
     "Description": "Offbeat Rap - Spoken Word",
     "YoutubeAccountUrl": "https://youtu.be/1cljS_PvJoM?si=8S0y5ocgOmnqI97V",
-    "ExtraDescription": "Old Legendary Deleted Member Ostiarium A.K.A. KaneLonis"
+    "ExtraDescription": "Old Legendary Deleted Member Ostiarium A.K.A. KaneLonis",
+    "Genre": "Rap"
   },
   {
     "Name": "Pizza Boston",
     "PhotoPath": "PizzaBoston.jpg",
     "Description": "Hardcore punk",
     "IsABand": true,
-    "ExtraDescription": "Ellhnofwno topikistiko KCHC apovrasma"
+    "ExtraDescription": "Ellhnofwno topikistiko KCHC apovrasma",
+    "Genre": "Punk"
   },
   {
     "Name": "PULL OUT",
@@ -137,7 +153,8 @@
     "Description": "Hatecore",
     "IsABand": true,
     "ExtraDescription": "Οι Pull Out σχηματίστηκαν από μέλη του KCHC που δεν γνωρίζουμε με ακρίβεια αλλά είναι ο Σωκ και ο Σπύρος που ήθελαν να εκφράσουν την αγάπη τους για την φάση της Αθήνα και τους Αθηνέζους.",
-    "YoutubeAccountUrl": "https://www.youtube.com/watch?v=TBLQVqGTmS0"
+    "YoutubeAccountUrl": "https://www.youtube.com/watch?v=TBLQVqGTmS0",
+    "Genre": "Punk"
   },
   {
     "Name": "S.A.D.",
@@ -147,7 +164,8 @@
     "ExtraDescription": "Smileumenoi sta skotina ghetto tis elladas kai exontas epizisi polles aimatires siggrousis me ta tsonia apofasisame na peksoume rok mousiki",
     "BandCampAccountUrl": "https://sadsxolh.bandcamp.com/",
     "YoutubeAccountUrl": "https://www.youtube.com/@TheSmirlis",
-    "SpotifyAccountUrl": "https://open.spotify.com/artist/64D1b2JIB1pFXNsGeDzbbr"
+    "SpotifyAccountUrl": "https://open.spotify.com/artist/64D1b2JIB1pFXNsGeDzbbr",
+    "Genre": "Rock"
   },
   {
     "Name": "Swarm Of Rats",
@@ -156,7 +174,8 @@
     "IsABand": true,
     "BandCampAccountUrl": "https://swarmofratshc219.bandcamp.com/",
     "YoutubeAccountUrl": "https://www.youtube.com/channel/UCnmh1PSVs-zCLSa5MCZOldg",
-    "ExtraDescription": "A 4 piece hardcore band from Katerini est. 2014 Gio-Vocals George-Drums Soc-Guitar Chris-Bass K.CITY HARDCORE. -219-"
+    "ExtraDescription": "A 4 piece hardcore band from Katerini est. 2014 Gio-Vocals George-Drums Soc-Guitar Chris-Bass K.CITY HARDCORE. -219-",
+    "Genre": "BeatdownHardcore"
   },
   {
     "Name": "Taratsa Paradeisou",
@@ -165,7 +184,8 @@
     "ExtraDescription": "Πως αλλιώς νομίζεις θα την παλεύαμε στην επαρχεία;",
     "IsABand": true,
     "SpotifyAccountUrl": "https://open.spotify.com/artist/6mxsIAUaOuuaYYVSkQ0xM9",
-    "YoutubeAccountUrl": "https://www.youtube.com/channel/UCzNawIaqEx0rQ87S8v5uYRg"
+    "YoutubeAccountUrl": "https://www.youtube.com/channel/UCzNawIaqEx0rQ87S8v5uYRg",
+    "Genre": "Indie"
   },
   {
     "Name": "Theios Karaflesas",
@@ -180,14 +200,16 @@
     "PhotoPath": "wordsofhate.jpg",
     "Description": "Hardcore Punk from Katerini est.2015",
     "ExtraDescription": "Vocals:Panos\nGuitar:Spyros\nBass:Soc\nDrums:Giorgos",
-    "IsABand": true
+    "IsABand": true,
+    "Genre": "Punk"
   },
   {
     "Name": "Aχώνευτοι",
     "PhotoPath": "Agxoneytoi",
     "Description": "Punk Rock",
     "ExtraDescription": "Υλικό που βρέθηκε σε μία κασέτα στο πατάρι από το '78",
-    "IsABand": true
+    "IsABand": true,
+    "Genre": "Rock"
   },
   {
     "Name": "έβαν",
@@ -195,7 +217,8 @@
     "Description": "indie emo folk",
     "ExtraDescription": "ελληνικη ινδιε εμο φολκ και όχι μόνο...",
     "SpotifyAccountUrl": "https://open.spotify.com/artist/18ZQQi1nOI6p2YrK3dPQ51?si=_8-D5BNeRWq8NiKfRxOL_Q",
-    "YoutubeAccountUrl": "https://www.youtube.com/@EvanKakouris"
+    "YoutubeAccountUrl": "https://www.youtube.com/@EvanKakouris",
+    "Genre": "Indie"
   },
   {
     "Name": "Θεοχάρης",
@@ -203,7 +226,8 @@
     "Description": "Grindcore, Hardcore Punk",
     "ExtraDescription": "Δημελές DIY Grindcore/Hardcore Punk σχήμα κατευθείαν από την κωλότρυπα της Νέας Νότιας Μακεδονίας",
     "IsABand": true,
-    "BandCampAccountUrl": "https://theoharis.bandcamp.com/album/storage-room-rehearsal"
+    "BandCampAccountUrl": "https://theoharis.bandcamp.com/album/storage-room-rehearsal",
+    "Genre": "Punk"
   },
   {
     "Name": "Σπυρίδωνας",
