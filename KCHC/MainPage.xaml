@@ -2,12 +2,23 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="KCHC.MainPage">
-
     <Grid>
         <Image Source="kchc.ico" HeightRequest="300" Aspect="AspectFill"/>
         <Grid>
-            <Button x:Name="KinimatoramaButton" ImageSource="Kinimatorama.jpg" HorizontalOptions="End" VerticalOptions="Start" Clicked="OnKinimatoramaImageClicked" />
-            <Grid VerticalOptions="CenterAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="GenreButton" ImageSource="menu.png" Grid.Row="0" Grid.Column="0" Clicked="OnMenuButtonClicked" />
+            <Button x:Name="KinimatoramaButton" ImageSource="Kinimatorama.jpg" Grid.Row="0" Grid.Column="2" Clicked="OnKinimatoramaImageClicked" />
+
+            <Grid Grid.Row="1" Grid.ColumnSpan="3" VerticalOptions="CenterAndExpand">
                 <!-- Custom Indicator Layout -->
                 <StackLayout x:Name="CustomIndicator" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="End" HeightRequest="5">
                     <!-- Indicators will be added dynamically in code-behind -->

@@ -110,6 +110,11 @@ namespace KCHC
             }
         }
 
+        private async void OnMenuButtonClicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Button Clicked", "Other button clicked!", "OK");
+        }
+
         private async void OnImageTapped(object sender, EventArgs e)
         {
             if (sender is Image tappedImage && tappedImage.BindingContext is Models.Artist selectedArtist)

@@ -7,7 +7,7 @@ namespace KCHC.Models
     public class Artist : Person
     {
         public string Description { get; set; } = string.Empty;
-        public Genre Genre { get; set; } = Genre.Katerinian;
+        public List<Genre> Genre { get; set; } =  new List<Genre>();
         public string ContentImage { get; set; } = string.Empty;
         public string SpotifyAccountUrl { get; set; } = string.Empty;
         public string YoutubeAccountUrl { get; set; } = string.Empty;
@@ -38,7 +38,7 @@ namespace KCHC.Models
         /// <summary> 
         ///  Constructor with optional parameters. Only the name is necessary.
         /// </summary> 
-        public Artist(string name, string photoPath = "", string description = "", Genre genre = Genre.Katerinian, string contentImage = "", string spotifyAccountUrl = "", string youtubeAccountUrl, string bandCampAccountUrl = "",
+        public Artist(string name, string photoPath = "", string description = "", List<Genre> genre = null, string contentImage = "", string spotifyAccountUrl = "", string youtubeAccountUrl= "", string bandCampAccountUrl = "",
             string soundcloudAccountUrl = "", string trovoAccountUrl = "", string twitchAccountUrl = "", string extraDescription = "", string songkickUrl = "", bool isABand = true, DateTime dateTime = default, List<MemberRole> members = null)
         {
             Name = name;

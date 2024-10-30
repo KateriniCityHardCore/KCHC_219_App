@@ -258,5 +258,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\panoskotsoglou.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\drawable\menu.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
