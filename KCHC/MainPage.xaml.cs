@@ -112,7 +112,10 @@ namespace KCHC
 
         private async void OnMenuButtonClicked(object sender, EventArgs e)
         {
-            await DisplayAlert("Button Clicked", "Other button clicked!", "OK");
+            if (Application.Current.MainPage?.Navigation != null)
+            {
+                await Application.Current.MainPage.Navigation.PushAsync(new SettingsPage());
+            }
         }
 
         private async void OnImageTapped(object sender, EventArgs e)

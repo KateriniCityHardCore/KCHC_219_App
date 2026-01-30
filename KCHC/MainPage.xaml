@@ -15,7 +15,7 @@
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
-            <Button x:Name="GenreButton" ImageSource="menu.png" Grid.Row="0" Grid.Column="0" Clicked="OnMenuButtonClicked" />
+            <Button x:Name="GenreButton" ImageSource="settings.png" Grid.Row="0" Grid.Column="0" Clicked="OnMenuButtonClicked" />
             <Button x:Name="KinimatoramaButton" ImageSource="Kinimatorama.jpg" Grid.Row="0" Grid.Column="2" Clicked="OnKinimatoramaImageClicked" />
 
             <Grid Grid.Row="1" Grid.ColumnSpan="3" VerticalOptions="CenterAndExpand">
