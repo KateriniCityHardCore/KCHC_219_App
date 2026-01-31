@@ -4,22 +4,48 @@
              x:Class="KCHC.SettingsPage"
              Title="Settings">
     <Grid Padding="0">
+        <Image x:Name="PageBackground"
+               Source="kchcsettings.png"
+               Aspect="AspectFill"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"
+               InputTransparent="True" />
+
         <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-            <StackLayout Padding="20" Spacing="12">
+            <Frame BackgroundColor="#CCFFFFFF"
+                   CornerRadius="16"
+                   HasShadow="True"
+                   Padding="18"
+                   Margin="16">
+                <StackLayout Spacing="12">
 
-                <Label Text="Enable Intro Music" />
-                <Switch x:Name="IntroMusicSwitch" />
+                    <Label Text="Enable Intro Music"
+                           FontSize="20"
+                           TextColor="Black" />
+                    <Switch x:Name="IntroMusicSwitch" />
 
-                <Label Text="Main Page Appearance" />
-                <StackLayout Orientation="Horizontal" Spacing="10" VerticalOptions="Center">
-                    <Label Text="Light" VerticalOptions="Center" />
-                    <Switch x:Name="ModeSwitch" VerticalOptions="Center" />
-                    <Label Text="Dark" VerticalOptions="Center" />
+                    <Label Text="Main Page Appearance"
+                           FontSize="20"
+                           TextColor="Black" />
+                    <StackLayout Orientation="Horizontal" Spacing="10" VerticalOptions="Center">
+                        <Label Text="Light"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                               TextColor="Black" />
+                        <Switch x:Name="ModeSwitch" VerticalOptions="Center" />
+                        <Label Text="Dark"
+                               FontSize="16"
+                               VerticalOptions="Center"
+                               TextColor="Black" />
+                    </StackLayout>
+
+                    <Button Text="Save"
+                            Clicked="OnSaveClicked"
+                            FontSize="18"
+                            TextColor="Black" />
+
                 </StackLayout>
-
-                <Button Text="Save" Clicked="OnSaveClicked" />
-
-            </StackLayout>
+            </Frame>
         </ScrollView>
     </Grid>
 </ContentPage>
