@@ -8,24 +8,54 @@ namespace KCHC
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SettingsPage : ContentPage
     {
+        private const string DarkFile = "kchc.ico";
+        private const string LightFile = "whitelogo.png";
+
         public SettingsPage()
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-            this.BindingContext = typeof(Properties.Settings);
-            // Assuming you have a ViewModel for your settings
-            // Set the BindingContext to an instance of your ViewModel
-            // this.BindingContext = new SettingsViewModel();
+
+            // Init controls from stored settings
+            IntroMusicSwitch.IsToggled = Settings.IntroMusicEnabled;
+
+            var stored = Settings.BackgroundImage ?? string.Empty;
+            if (!string.IsNullOrEmpty(stored))
+            {
+                ModeSwitch.IsToggled = string.Equals(stored, DarkFile, StringComparison.OrdinalIgnoreCase);
+            }
+            else
+            {
+                // default to dark
+                ModeSwitch.IsToggled = true;
+                Settings.BackgroundImage = DarkFile;
+            }
+
+            ModeSwitch.Toggled += ModeSwitch_Toggled;
         }
 
-        private void OnSaveClicked(object sender, EventArgs e)
+        private void ModeSwitch_Toggled(object sender, ToggledEventArgs e)
         {
-            // Handle save button click event here
-            // You can access the values using IntroMusicSwitch.IsToggled, FavoriteArtistEntry.Text, BackgroundImageEntry.Text
-            // Save the values to your AppSettings or ViewModel
-            var introMusicEnabled = Settings.IntroMusicEnabled;
-            var favoriteArtist = Settings.FavoriteArtist;
-            var backgroundImage = Settings.BackgroundImage;
+            // true => Dark (kchc.ico), false => Light (whitelogo.png)
+            Settings.BackgroundImage = e.Value ? DarkFile : LightFile;
+        }
+
+        private async void OnSaveClicked(object sender, EventArgs e)
+        {
+            // Persist values
+            Settings.IntroMusicEnabled = IntroMusicSwitch.IsToggled;
+            Settings.BackgroundImage = ModeSwitch.IsToggled ? DarkFile : LightFile;
+
+            try
+            {
+                await App.Current.SavePropertiesAsync();
+            }
+            catch
+            {
+                // ignore save failure or log if needed
+            }
+
+            await DisplayAlert("Saved", "Settings saved.", "OK");
         }
     }
 }

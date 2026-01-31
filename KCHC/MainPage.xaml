@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="KCHC.MainPage">
     <Grid>
-        <Image Source="kchc.ico" HeightRequest="300" Aspect="AspectFill"/>
+        <Image x:Name="BackgroundImage" Source="kchc.ico" HeightRequest="300" Aspect="AspectFill"/>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -23,7 +23,6 @@
                 <StackLayout x:Name="CustomIndicator" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="End" HeightRequest="5">
                     <!-- Indicators will be added dynamically in code-behind -->
                 </StackLayout>
-                <!-- Additional Image in the top-right corner -->
                 <CarouselView x:Name="ArtistsCarousel" ItemsSource="{Binding}" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" InputTransparent="True">
                     <CarouselView.ItemTemplate>
                         <DataTemplate>
@@ -33,8 +32,9 @@
                                         <TapGestureRecognizer Tapped="OnImageTapped" />
                                     </Image.GestureRecognizers>
                                 </Image>
-                                <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="30" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
-                                <Label Text="{Binding Description}" FontSize="20" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand"/>
+                                <!-- Use DynamicResource for TextColor so it updates when appearance changes -->
+                                <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="30" TextColor="{DynamicResource MainTextColor}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontFamily="{DynamicResource MainFontFamily}"/>
+                                <Label Text="{Binding Description}" FontSize="20" TextColor="{DynamicResource MainTextColor}" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" FontFamily="{DynamicResource MainFontFamily}"/>
                             </StackLayout>
                         </DataTemplate>
                     </CarouselView.ItemTemplate>

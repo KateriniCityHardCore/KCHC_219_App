@@ -2,23 +2,32 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using KCHC.Models;
-using System.ComponentModel;
 using Xamarin.Forms;
 using Newtonsoft.Json;
-using System.IO;
-using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
 using System.Linq;
+using KCHC.Properties;
 
 namespace KCHC
 {
     public partial class MainPage : ContentPage
     {
+        private const string DefaultFont = "Default";
+        private const string DarkFile = "kchc.ico";
+        private const string LightFile = "whitelogo.png";
+
         public MainPage()
         {
             InitializeComponent();
+
+            // Ensure the DynamicResource key exists with the stored value so XAML picks it up.
+            ApplyFontFromSettings();
+
+            // Apply theme (text color) and background from Settings
+            ApplyThemeFromSettings();
+            ApplyBackgroundFromSettings();
+
             GetUpdate();
             NavigationPage.SetHasNavigationBar(this, false);
             ArtistsCarousel.BindingContext = App.Artists;
@@ -26,6 +35,72 @@ namespace KCHC
             ArtistsCarousel.PositionChanged += OnPositionSelected;
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            // Re-apply theme and background in case Settings changed
+            ApplyThemeFromSettings();
+            ApplyBackgroundFromSettings();
+        }
+
+        private void ApplyThemeFromSettings()
+        {
+            var bgSetting = Settings.BackgroundImage ?? string.Empty;
+
+            // Determine mode: dark when BackgroundImage equals DarkFile
+            var isDark = string.Equals(bgSetting, DarkFile, StringComparison.OrdinalIgnoreCase) || string.IsNullOrWhiteSpace(bgSetting);
+
+            var color = isDark ? Color.White : Color.Black;
+
+            // Store/replace resource so DynamicResource bindings update
+            if (Application.Current != null)
+            {
+                if (Application.Current.Resources.ContainsKey("MainTextColor"))
+                    Application.Current.Resources["MainTextColor"] = color;
+                else
+                    Application.Current.Resources.Add("MainTextColor", color);
+            }
+        }
+
+        private void ApplyFontFromSettings()
+        {
+            var fontSetting = Settings.MainPageFont ?? DefaultFont;
+
+            object valueToStore = fontSetting;
+            if (string.Equals(fontSetting, DefaultFont, StringComparison.OrdinalIgnoreCase))
+                valueToStore = null;
+
+            if (Application.Current != null)
+            {
+                if (Application.Current.Resources.ContainsKey("MainFontFamily"))
+                    Application.Current.Resources["MainFontFamily"] = valueToStore;
+                else
+                    Application.Current.Resources.Add("MainFontFamily", valueToStore);
+            }
+        }
+
+        private void ApplyBackgroundFromSettings()
+        {
+            var bgSetting = Settings.BackgroundImage ?? string.Empty;
+            ImageSource source = null;
+
+            if (!string.IsNullOrWhiteSpace(bgSetting))
+            {
+                try
+                {
+                    source = ImageSource.FromFile(bgSetting);
+                }
+                catch
+                {
+                    source = null;
+                }
+            }
+
+            if (source == null)
+                source = ImageSource.FromFile(DarkFile);
+
+            BackgroundImage.Source = source;
+        }
 
         public async void GetUpdate()
         {
@@ -90,7 +165,8 @@ namespace KCHC
                 };
                 CustomIndicator.Children.Add(boxView);
             }
-            CustomIndicator.Children[0].BackgroundColor = Color.DarkRed; 
+            if (CustomIndicator.Children.Count > 0)
+                CustomIndicator.Children[0].BackgroundColor = Color.DarkRed;
         }
         private void OnPositionSelected(object sender, PositionChangedEventArgs e)
         {

@@ -10,6 +10,7 @@ namespace KCHC.Properties
         private const string IntroMusicEnabledKey = "IntroMusicEnabled";
         private const string FavoriteArtistKey = "FavoriteArtist";
         private const string BackgroundImageKey = "BackgroundImage";
+        private const string MainPageFontKey = "MainPageFont";
 
         public static bool IntroMusicEnabled
         {
@@ -27,6 +28,13 @@ namespace KCHC.Properties
         {
             get => App.Current.Properties.ContainsKey(BackgroundImageKey) ? (string)App.Current.Properties[BackgroundImageKey] : string.Empty; // Default to empty string if not set
             set => App.Current.Properties[BackgroundImageKey] = value;
+        }
+
+        // New: store user's MainPage font choice (string stored can be a font family name or "Default")
+        public static string MainPageFont
+        {
+            get => App.Current.Properties.ContainsKey(MainPageFontKey) ? (string)App.Current.Properties[MainPageFontKey] : "Default";
+            set => App.Current.Properties[MainPageFontKey] = value;
         }
     }
 }

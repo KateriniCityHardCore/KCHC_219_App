@@ -16781,10 +16781,13 @@ namespace KCHC.Droid
 			public const int twitch = 2131165366;
 			
 			// aapt resource value: 0x7F0700B7
-			public const int wordsofhate = 2131165367;
+			public const int whitelogo = 2131165367;
 			
 			// aapt resource value: 0x7F0700B8
-			public const int youtube = 2131165368;
+			public const int wordsofhate = 2131165368;
+			
+			// aapt resource value: 0x7F0700B9
+			public const int youtube = 2131165369;
 			
 			static Drawable()
 			{
