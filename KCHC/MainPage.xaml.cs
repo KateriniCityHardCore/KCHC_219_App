@@ -20,6 +20,7 @@ namespace KCHC
         public MainPage()
         {
             InitializeComponent();
+            GetUpdate();
 
             // Ensure the DynamicResource key exists with the stored value so XAML picks it up.
             ApplyFontFromSettings();
@@ -28,7 +29,6 @@ namespace KCHC
             ApplyThemeFromSettings();
             ApplyBackgroundFromSettings();
 
-            GetUpdate();
             NavigationPage.SetHasNavigationBar(this, false);
             ArtistsCarousel.BindingContext = App.Artists;
             InitializeCustomIndicator(App.Artists.Count);
@@ -106,7 +106,7 @@ namespace KCHC
         {
             if (IsDeviceOnline())
             {
-                string owner = "GSmyrlis";
+                string owner = "KateriniCityHardcore";
                 string repo = "KCHC_219_App";
                 // Create HttpClient instance
                 using (HttpClient client = new HttpClient())
