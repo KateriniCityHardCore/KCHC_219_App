@@ -2,19 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="KCHC.SettingsPage"
-             Title="Settings">
+             Title="Settings"
+             BackgroundImageSource="kchcsettings.png">
 
-    <StackLayout>
-        <Switch x:Name="IntroMusicSwitch" IsToggled="{Binding IntroMusicEnabled}" />
-        <Label Text="Enable Intro Music" />
-
-        <Entry x:Name="FavoriteArtistEntry" Text="{Binding FavoriteArtist}" />
-        <Label Text="Favorite Artist" />
-
-        <Entry x:Name="BackgroundImageEntry" Text="{Binding BackgroundImage}" />
-        <Label Text="Background Image" />
-
-        <Button Text="Save" Clicked="OnSaveClicked" />
-    </StackLayout>
-
+    <Grid>
+        <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout Padding="20" Spacing="12">
+                <Switch x:Name="IntroMusicSwitch" IsToggled="{Binding IntroMusicEnabled}" />
+                <Label Text="Enable Intro Music" />
+                <Button Text="Save" Clicked="OnSaveClicked" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
 </ContentPage>
